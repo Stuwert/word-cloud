@@ -15,6 +15,7 @@ module.exports = {
   },
 
   putter: function(word, person, object){
+    word = word.toLowerCase();
     if (! (word in object)){
       object[word] = this.newWord(person);
     }else{
